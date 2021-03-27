@@ -1,3 +1,5 @@
+// yangsibao 微信小程序 .eslintrc.js
+
 module.exports = {
   env: {
     browser: true,
@@ -7,6 +9,7 @@ module.exports = {
   extends: [
     'standard'
   ],
+  // 全局变量
   globals: {
     App: true,
     wx: true,
@@ -20,5 +23,11 @@ module.exports = {
     ecmaVersion: 12
   },
   rules: {
+    indent: [
+      'error', 2
+    ],
+    quotes: [
+      'error', 'single'
+    ]
   }
 }

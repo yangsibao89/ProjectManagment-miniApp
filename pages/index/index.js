@@ -17,6 +17,12 @@ Page({
       url: '../logs/logs'
     })
   },
+  onTap () {
+    wx.navigateTo({
+      url: '../test/test'
+    })
+  },
+
   onLoad () {
     if (wx.getUserProfile) {
       this.setData({
