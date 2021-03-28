@@ -36,9 +36,9 @@ module.exports = {
       'error', 'unix'
     ],
     // 要求或禁止使用分号代替 ASI ["always","never"]
-    semi: [
-      'error', 'always'
-    ],
+    // semi: [
+    //   'error', 'always'
+    // ],
     // 禁止调用console对象方法,一般在生产环境中使用
     'no-console': [
       'off', {
@@ -48,4 +48,4 @@ module.exports = {
     ]
 
   }
-};
+}
