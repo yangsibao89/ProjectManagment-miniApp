@@ -3,9 +3,14 @@
   color: #2EE3C3;
   /* text-decoration: underline; */
   font-family: cursive,monospace;
-  font-size: xx-large;
-  font-style: italic;
-  font-weight: 300;
+  /* font-size: xx-large; */
+  /* font-style: italic; */
+  /* font-weight: 300; */
   /* text-shadow: 10rpx 10rpx 10rpx 10rpx red; //no support*/
   text-align: center;
 }
+
+/* .welcome-text {
+  
+  padding: 500 rpx;
+} */

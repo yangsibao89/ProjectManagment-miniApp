@@ -1,0 +1,7 @@
+<!--components/cancel/cancel.wxml-->
+<text>components/cancel/cancel.wxml</text>
+
+
+<view class="inner">
+    {{innerText}}
+</view>

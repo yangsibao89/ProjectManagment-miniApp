@@ -1,12 +1,10 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
   <view class="welcome">
-    <view>
-      欢迎来到项目管理系统
-    </view>
-    <view >
-      小程序端
-    </view>
+    <text class="welcome-text" bindtap="changeText">{{hello}}</text>
   </view>
-    
+  <cancel inner-text="lalal"></cancel>
+  <!-- <button type="primary"></button> -->
+  <!-- <commit inner-text="some text"></commit> -->
+  <Select class="section-select" select-array='{{selectArray}}' current-text="{{current_text}}" bind:getNowData='getCurrentTextAction'></Select>
 </view>

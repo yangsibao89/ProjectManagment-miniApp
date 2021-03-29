@@ -1,9 +1,11 @@
 {
+  "entryPagePath": "pages/index/index",
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/test/test",
-    "pages/index-copy/index-copy"
+    "pages/index-copy/index-copy",
+    "pages/scope/scope"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,6 +13,92 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "color": "#FFFFFF",
+    "selectedColor": "#696969",
+    "backgroundColor": "#2EE3C3",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "logs",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "test",
+        "iconPath": "",
+        "selectedIconPath": ""
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": true,
+  "functionalPages": false,
+  "subPackages": [
+    {
+      "root": "packageA",
+      "name": "package-a",
+      "pages": [
+        "pages/cat/cat",
+        "pages/dog/dog"
+      ]
+    },
+    {
+      "root": "packageB",
+      "name": "package-b",
+      "pages": [
+        "pages/apple/apple",
+        "pages/banana/banana"
+      ],
+      "independent": true
+    },
+    {
+      "root": "packageC",
+      "name": "package-c",
+      "pages": [
+        "pages/girl/girl",
+        "pages/stocking/stocking"
+      ],
+      "independent": true
+    }
+  ],
+  "workers": "workers",
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "plugins": {},
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "packageA",
+        "packageC"
+      ]
+    },
+    "packageA/pages/cat/cat": {
+      "network": "all",
+      "packages": [
+        "package-b",
+        "package-c"
+      ]
+    }
+  },
+  "resizable": false,
+  "usingComponents": {},
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

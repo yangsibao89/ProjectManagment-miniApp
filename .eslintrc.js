@@ -13,11 +13,15 @@ module.exports = {
   globals: {
     App: true,
     wx: true,
-    Compoenent: true,
+    worker: true,
+    Component: true,
     Behavior: true,
     Page: true,
     getApp: true,
-    getCurrentPages: true
+    getCurrentPages: true,
+    __DEV__: true,
+    __WECHAT__: true,
+    number: true
   },
   parserOptions: {
     ecmaVersion: 12
@@ -32,9 +36,9 @@ module.exports = {
       'error', 'single'
     ],
     // 强制使用一致的换行风格
-    'linebreak-style': [
-      'error', 'unix'
-    ],
+    // 'linebreak-style': [
+    //   'error', 'unix'
+    // ],
     // 要求或禁止使用分号代替 ASI ["always","never"]
     // semi: [
     //   'error', 'always'
